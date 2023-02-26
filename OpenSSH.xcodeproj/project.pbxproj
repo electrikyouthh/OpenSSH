@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -454,7 +454,6 @@
 		1CC368470FF02CD6009818B0 /* sftp-server.c in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B2F370FEC5E93004F1935 /* sftp-server.c */; };
 		1CC3684A0FF02D09009818B0 /* progressmeter.c in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B2F1D0FEC5CFE004F1935 /* progressmeter.c */; };
 		1CC3686F0FF02FE3009818B0 /* sftp-common.c in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B2F350FEC5E93004F1935 /* sftp-common.c */; };
-		2E2B12F226176A3D00DF1CCA /* ESC.pub in Install SSH CA */ = {isa = PBXBuildFile; fileRef = 2E2B12F126176A3D00DF1CCA /* ESC.pub */; };
 		2E3102122613F99100E9BDD5 /* ssh-sk-client.c in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0DF3C260966FF0074A51D /* ssh-sk-client.c */; };
 		2E7C130E287CA11700CC9DD8 /* hostbased.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E7C1305287CA11700CC9DD8 /* hostbased.sh */; };
 		2E7C130F287CA11700CC9DD8 /* keygen-sshfp.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E7C1306287CA11700CC9DD8 /* keygen-sshfp.sh */; };
@@ -501,6 +500,7 @@
 		2EF55BEA2610D93200334976 /* ssh-sk-client.c in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0DF3C260966FF0074A51D /* ssh-sk-client.c */; };
 		2EF55BEB2610D94300334976 /* ssh-sk-client.c in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0DF3C260966FF0074A51D /* ssh-sk-client.c */; };
 		2EF55BEC2610D9B900334976 /* ssh-sk-client.c in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0DF3C260966FF0074A51D /* ssh-sk-client.c */; };
+		3524FB4929AB76CF007823D1 /* ESC.pub in Install SSH CA */ = {isa = PBXBuildFile; fileRef = 3524FB4B29AB76CF007823D1 /* ESC.pub */; };
 		727891151D9F1EA200767C80 /* platform-tracing.c in Sources */ = {isa = PBXBuildFile; fileRef = 727891141D9F1E9800767C80 /* platform-tracing.c */; };
 		727891161D9F1EDB00767C80 /* platform-tracing.c in Sources */ = {isa = PBXBuildFile; fileRef = 727891141D9F1E9800767C80 /* platform-tracing.c */; };
 		727891181D9F1F0300767C80 /* platform-tracing.c in Sources */ = {isa = PBXBuildFile; fileRef = 727891141D9F1E9800767C80 /* platform-tracing.c */; };
@@ -1338,7 +1338,7 @@
 			dstPath = /private/etc/ssh;
 			dstSubfolderSpec = 0;
 			files = (
-				2E2B12F226176A3D00DF1CCA /* ESC.pub in Install SSH CA */,
+				3524FB4929AB76CF007823D1 /* ESC.pub in Install SSH CA */,
 			);
 			name = "Install SSH CA";
 			runOnlyForDeploymentPostprocessing = 1;
@@ -1700,7 +1700,6 @@
 		1C982D8E10925D4A00C0E559 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = version.h; path = openssh/version.h; sourceTree = "<group>"; };
 		1CCA49A40FF1A9B40004CEAC /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = openssh/config.h; sourceTree = "<group>"; };
 		2E2B12E126175D8C00DF1CCA /* conf */ = {isa = PBXFileReference; lastKnownFileType = folder; path = conf; sourceTree = "<group>"; };
-		2E2B12F126176A3D00DF1CCA /* ESC.pub */ = {isa = PBXFileReference; lastKnownFileType = text; name = ESC.pub; path = conf/ESC.pub; sourceTree = "<group>"; };
 		2E2D2D1B283C4AC9004292DC /* libexec-entitlements.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "libexec-entitlements.xcconfig"; path = "xcconfigs/libexec-entitlements.xcconfig"; sourceTree = "<group>"; };
 		2E2D2D1C283C4AC9004292DC /* bin-entitlements.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "bin-entitlements.xcconfig"; path = "xcconfigs/bin-entitlements.xcconfig"; sourceTree = "<group>"; };
 		2E2D2D1D283C4AC9004292DC /* sbin-entitlements.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "sbin-entitlements.xcconfig"; path = "xcconfigs/sbin-entitlements.xcconfig"; sourceTree = "<group>"; };
@@ -1761,6 +1760,11 @@
 		2EE940BA28790749009B239A /* bsd-pselect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "bsd-pselect.c"; path = "openssh/openbsd-compat/bsd-pselect.c"; sourceTree = "<group>"; };
 		2EE940BC2879076A009B239A /* port-prngd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "port-prngd.c"; path = "openssh/openbsd-compat/port-prngd.c"; sourceTree = "<group>"; };
 		2EF4499926125420003C5694 /* agent-subprocess.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "agent-subprocess.sh"; path = "openssh/regress/agent-subprocess.sh"; sourceTree = "<group>"; };
+		3524FB4129AB7217007823D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Base; path = "Base.lproj/ssh-keygen.entitlements"; sourceTree = "<group>"; };
+		3524FB4329AB721C007823D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Base; path = "Base.lproj/ssh-pkcs11-helper.entitlements"; sourceTree = "<group>"; };
+		3524FB4529AB7220007823D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Base; path = Base.lproj/ssh.entitlements; sourceTree = "<group>"; };
+		3524FB4729AB7223007823D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Base; path = Base.lproj/sshd.entitlements; sourceTree = "<group>"; };
+		3524FB4A29AB76CF007823D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text; name = Base; path = Base.lproj/ESC.pub; sourceTree = "<group>"; };
 		727891101D9EF6E900767C80 /* bsd-err.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "bsd-err.c"; path = "openssh/openbsd-compat/bsd-err.c"; sourceTree = "<group>"; };
 		727891111D9F1D6D00767C80 /* utf8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = utf8.c; path = openssh/utf8.c; sourceTree = "<group>"; };
 		727891121D9F1D7B00767C80 /* utf8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utf8.h; path = openssh/utf8.h; sourceTree = "<group>"; };
@@ -1870,11 +1874,9 @@
 		F5A5C966208684B3003DDEC2 /* sshd-keygen-wrapper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "sshd-keygen-wrapper"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A5C96B208684F9003DDEC2 /* sshd-keygen-wrapper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sshd-keygen-wrapper.c"; sourceTree = "<group>"; };
 		FE0474DE1EA18B5900BFDC79 /* sshd-keygen-wrapper.8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sshd-keygen-wrapper.8"; sourceTree = "<group>"; };
-		FE15F0FD21237F9A00B75390 /* ssh-pkcs11-helper.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "ssh-pkcs11-helper.entitlements"; sourceTree = "<group>"; };
 		FE23D9011C747142002E7923 /* umac128.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = umac128.c; path = openssh/umac128.c; sourceTree = "<group>"; };
 		FE445FB31EC916BA00DCAFFF /* ssh_config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ssh_config; path = openssh/ssh_config; sourceTree = "<group>"; };
 		FE445FB41EC916BA00DCAFFF /* sshd_config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sshd_config; path = openssh/sshd_config; sourceTree = "<group>"; };
-		FE4CF7441CB6CE8F0018C72F /* ssh.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ssh.entitlements; sourceTree = "<group>"; };
 		FE54EE031CB3745D00A61CCB /* cipher-3des1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "cipher-3des1.c"; path = "openssh-legacy/cipher-3des1.c"; sourceTree = "<group>"; };
 		FE54EE051CB3748C00A61CCB /* cipher-bf1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "cipher-bf1.c"; path = "openssh-legacy/cipher-bf1.c"; sourceTree = "<group>"; };
 		FE54EE071CB3787A00A61CCB /* cipher-aesctr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "cipher-aesctr.h"; path = "openssh-legacy/cipher-aesctr.h"; sourceTree = "<group>"; };
@@ -2034,7 +2036,6 @@
 		FEB9B17B215E8F0700487B1E /* cfgmatchlisten.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = cfgmatchlisten.sh; path = openssh/regress/cfgmatchlisten.sh; sourceTree = "<group>"; };
 		FEB9B17C215E8F0700487B1E /* mkdtemp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mkdtemp.c; path = openssh/regress/mkdtemp.c; sourceTree = "<group>"; };
 		FEB9B18B215E8F6900487B1E /* mkdtemp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mkdtemp; sourceTree = BUILT_PRODUCTS_DIR; };
-		FEBB73DE20E3603400BCEAF2 /* sshd.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = sshd.entitlements; sourceTree = "<group>"; };
 		FEC3D3E61C9BE92F00B698D9 /* platform-pledge.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "platform-pledge.c"; path = "openssh/platform-pledge.c"; sourceTree = "<group>"; };
 		FEC3D3F51C9BE97C00B698D9 /* check-perm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "check-perm"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC3D3F61C9BE9CE00B698D9 /* cert-file.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "cert-file.sh"; path = "openssh/regress/cert-file.sh"; sourceTree = "<group>"; };
@@ -2068,7 +2069,6 @@
 		FEC3D4141C9BEAAC00B698D9 /* sshd.0 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sshd.0; path = openssh/sshd.0; sourceTree = "<group>"; };
 		FEC3D4151C9BEAAC00B698D9 /* sshd.8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sshd.8; path = openssh/sshd.8; sourceTree = "<group>"; };
 		FECAC7F32192BDC30007479F /* libressl-api-compat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "libressl-api-compat.c"; path = "openssh/openbsd-compat/libressl-api-compat.c"; sourceTree = "<group>"; };
-		FECD1CCE212B890F00CC0BBB /* ssh-keygen.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "ssh-keygen.entitlements"; sourceTree = "<group>"; };
 		FECDEB9122A49F5800D0A691 /* kexgen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = kexgen.c; path = openssh/kexgen.c; sourceTree = "<group>"; };
 		FEEF849B20B2521400CB7E8E /* sshkey-xmss.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "sshkey-xmss.c"; path = "openssh/sshkey-xmss.c"; sourceTree = "<group>"; };
 		FEEF849C20B2521400CB7E8E /* xmss_fast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = xmss_fast.c; path = openssh/xmss_fast.c; sourceTree = "<group>"; };
@@ -2317,7 +2317,7 @@
 		08FB7794FE84155DC02AAC07 /* openssh */ = {
 			isa = PBXGroup;
 			children = (
-				2E2B12F126176A3D00DF1CCA /* ESC.pub */,
+				3524FB4B29AB76CF007823D1 /* ESC.pub */,
 				FE15F0FC21237F6600B75390 /* Entitlements */,
 				FE9821451E9D8FEC008AA856 /* BATS.plist */,
 				1C59FB2F0FF15533008CBF3D /* OpenSSH.plist */,
@@ -2687,10 +2687,10 @@
 		FE15F0FC21237F6600B75390 /* Entitlements */ = {
 			isa = PBXGroup;
 			children = (
-				FECD1CCE212B890F00CC0BBB /* ssh-keygen.entitlements */,
-				FE15F0FD21237F9A00B75390 /* ssh-pkcs11-helper.entitlements */,
-				FE4CF7441CB6CE8F0018C72F /* ssh.entitlements */,
-				FEBB73DE20E3603400BCEAF2 /* sshd.entitlements */,
+				3524FB4229AB7217007823D1 /* ssh-keygen.entitlements */,
+				3524FB4429AB721C007823D1 /* ssh-pkcs11-helper.entitlements */,
+				3524FB4629AB7220007823D1 /* ssh.entitlements */,
+				3524FB4829AB7223007823D1 /* sshd.entitlements */,
 			);
 			path = Entitlements;
 			sourceTree = "<group>";
@@ -3684,7 +3684,7 @@
 			isa = PBXProject;
 			attributes = {
 				DefaultBuildSystemTypeForWorkspace = Latest;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1420;
 				ORGANIZATIONNAME = "Apple Inc.";
 				TargetAttributes = {
 					2E26F03B257F0DEE002DB31A = {
@@ -3721,9 +3721,6 @@
 			knownRegions = (
 				en,
 				Base,
-				fr,
-				ja,
-				de,
 			);
 			mainGroup = 08FB7794FE84155DC02AAC07 /* openssh */;
 			projectDirPath = "";
@@ -3896,6 +3893,7 @@
 		2EDA890425CA2AC300EC1639 /* Install Manpage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
+			dependencyFile = "$(DERIVED_FILES_DIR)/$(INPUT_FILE_PATH).d";
 			files = (
 			);
 			inputFileListPaths = (
@@ -5110,11 +5108,56 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		3524FB4229AB7217007823D1 /* ssh-keygen.entitlements */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3524FB4129AB7217007823D1 /* Base */,
+			);
+			name = "ssh-keygen.entitlements";
+			sourceTree = "<group>";
+		};
+		3524FB4429AB721C007823D1 /* ssh-pkcs11-helper.entitlements */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3524FB4329AB721C007823D1 /* Base */,
+			);
+			name = "ssh-pkcs11-helper.entitlements";
+			sourceTree = "<group>";
+		};
+		3524FB4629AB7220007823D1 /* ssh.entitlements */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3524FB4529AB7220007823D1 /* Base */,
+			);
+			name = ssh.entitlements;
+			sourceTree = "<group>";
+		};
+		3524FB4829AB7223007823D1 /* sshd.entitlements */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3524FB4729AB7223007823D1 /* Base */,
+			);
+			name = sshd.entitlements;
+			sourceTree = "<group>";
+		};
+		3524FB4B29AB76CF007823D1 /* ESC.pub */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3524FB4A29AB76CF007823D1 /* Base */,
+			);
+			name = ESC.pub;
+			path = conf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		1C6B2CBD0FEC4E74004F1935 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED2D477283C171500B260D6 /* staticlib.xcconfig */;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
@@ -5122,6 +5165,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED2D477283C171500B260D6 /* staticlib.xcconfig */;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = ssh;
 			};
 			name = Release;
@@ -5130,6 +5174,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E2D2D1C283C4AC9004292DC /* bin-entitlements.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
@@ -5137,6 +5183,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E2D2D1D283C4AC9004292DC /* sbin-entitlements.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
@@ -5144,6 +5192,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E2D2D1C283C4AC9004292DC /* bin-entitlements.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
@@ -5151,6 +5201,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E2D2D1C283C4AC9004292DC /* bin-entitlements.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
@@ -5158,6 +5210,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED2D475283C171500B260D6 /* bin.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
@@ -5165,6 +5219,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE4283C1C5200ED425E /* libexec.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
@@ -5172,6 +5228,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED2D475283C171500B260D6 /* bin.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
@@ -5179,6 +5237,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED2D475283C171500B260D6 /* bin.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
@@ -5186,6 +5246,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE4283C1C5200ED425E /* libexec.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
@@ -5193,42 +5255,50 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED2D475283C171500B260D6 /* bin.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
 		1C76A71E0FF0155400D35824 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
 		1C76A7300FF015BD00D35824 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
 		1C76A7BB0FF023CA00D35824 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
 		1C76A7BD0FF023E200D35824 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
 		1C77BFA4112C99860070F7EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
 		1C7D817A10FFC2BE00F0889F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
@@ -5236,30 +5306,36 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED2D474283C171500B260D6 /* Release.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
 		2E26F03D257F0DEE002DB31A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
 		2E26F03E257F0DEE002DB31A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
 		2E2B12E4261760F100DF1CCA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
 		2E2B12E5261760F100DF1CCA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
@@ -5267,6 +5343,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE5283C1C5300ED425E /* sbin.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = FDD437X3NF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -5274,6 +5356,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE5283C1C5300ED425E /* sbin.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = FDD437X3NF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -5281,6 +5369,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE4283C1C5200ED425E /* libexec.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
@@ -5288,18 +5378,22 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE4283C1C5200ED425E /* libexec.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
 		2EFC51C0255A33E500D8A19A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
 		2EFC51C1255A33E500D8A19A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
@@ -5307,6 +5401,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE7283C23D900ED425E /* localbin.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
@@ -5314,6 +5410,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE7283C23D900ED425E /* localbin.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
@@ -5321,18 +5419,22 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED2D476283C171500B260D6 /* Debug.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
 		731CAE151280C8140030B3F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
 		731CAE171280C8140030B3F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
@@ -5340,6 +5442,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED2D477283C171500B260D6 /* staticlib.xcconfig */;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
@@ -5347,6 +5450,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED2D477283C171500B260D6 /* staticlib.xcconfig */;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = ssh;
 			};
 			name = Debug;
@@ -5355,6 +5459,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E2D2D1C283C4AC9004292DC /* bin-entitlements.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
@@ -5362,6 +5468,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE4283C1C5200ED425E /* libexec.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
@@ -5369,6 +5477,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E2D2D1D283C4AC9004292DC /* sbin-entitlements.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
@@ -5376,6 +5486,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E2D2D1C283C4AC9004292DC /* bin-entitlements.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
@@ -5383,6 +5495,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E2D2D1C283C4AC9004292DC /* bin-entitlements.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
@@ -5390,6 +5504,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED2D475283C171500B260D6 /* bin.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
@@ -5397,6 +5513,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE4283C1C5200ED425E /* libexec.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
@@ -5404,6 +5522,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED2D475283C171500B260D6 /* bin.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
@@ -5411,6 +5531,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED2D475283C171500B260D6 /* bin.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
@@ -5418,30 +5540,36 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED2D475283C171500B260D6 /* bin.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
 		731CAE251280C8140030B3F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
 		731CAE291280C8140030B3F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
 		731CAE2D1280C8140030B3F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
 		731CAE2F1280C8140030B3F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
@@ -5449,6 +5577,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE6283C239100ED425E /* regress.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
@@ -5456,18 +5586,22 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE6283C239100ED425E /* regress.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
 		735961E917CE830500CFE215 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
 		735961EA17CE830500CFE215 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
@@ -5475,6 +5609,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE6283C239100ED425E /* regress.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
@@ -5482,6 +5618,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE6283C239100ED425E /* regress.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
@@ -5489,6 +5627,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE6283C239100ED425E /* regress.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = FDD437X3NF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -5496,6 +5640,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE6283C239100ED425E /* regress.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = FDD437X3NF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -5503,6 +5653,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E2D2D1B283C4AC9004292DC /* libexec-entitlements.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
@@ -5510,6 +5662,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E2D2D1B283C4AC9004292DC /* libexec-entitlements.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
@@ -5517,6 +5671,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE9283C344800ED425E /* sshd-keygen-wrapper.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = FDD437X3NF;
 			};
 			name = Release;
 		};
@@ -5524,6 +5682,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE9283C344800ED425E /* sshd-keygen-wrapper.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = FDD437X3NF;
 			};
 			name = Debug;
 		};
@@ -5531,6 +5693,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE8283C25C300ED425E /* slapconfig-keygen.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = FDD437X3NF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -5538,6 +5707,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE8283C25C300ED425E /* slapconfig-keygen.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = FDD437X3NF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -5545,6 +5721,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED2D475283C171500B260D6 /* bin.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Release;
 		};
@@ -5552,6 +5730,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED2D475283C171500B260D6 /* bin.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 			};
 			name = Debug;
 		};
@@ -5559,6 +5739,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE6283C239100ED425E /* regress.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = FDD437X3NF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -5566,6 +5753,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE6283C239100ED425E /* regress.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = FDD437X3NF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -5573,6 +5767,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE6283C239100ED425E /* regress.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = FDD437X3NF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -5580,6 +5780,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E655FE6283C239100ED425E /* regress.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = FDD437X3NF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
